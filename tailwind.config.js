@@ -1,5 +1,4 @@
 module.exports = {
-  theme: {},
   plugins: [require("daisyui")],
   content: [
     "./components/**/*.{js,vue,ts}",

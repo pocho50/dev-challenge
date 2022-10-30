@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="p-4">
-            <button class="btn">Hello daisyUI</button>
+            <AppButton>Hello daisyUI</AppButton>
         </div>
     </div>
 </template> 
