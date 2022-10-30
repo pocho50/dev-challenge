@@ -13,6 +13,7 @@
     "prettier": "2.7.1"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.0.12",
     "daisyui": "^2.36.1"
   }
 }
