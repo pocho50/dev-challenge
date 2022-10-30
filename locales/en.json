@@ -1,3 +1,8 @@
 {
-  "hello": "Hello"
+  "Flights": "Flights",
+  "Origin": "Origin",
+  "Passengers": "Pasajeros",
+  "Budget": "Budget",
+  "optional": "optional",
+  "Search": "Search"
 }
