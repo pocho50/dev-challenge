@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="p-4">
-            <AppButton>Hello daisyUI</AppButton>
+            <AppButton>{{ $t('hello') }}</AppButton>
         </div>
     </div>
 </template> 

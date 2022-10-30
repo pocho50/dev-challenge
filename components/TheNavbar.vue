@@ -35,6 +35,11 @@ const toggleDark = useToggle(isDark)
           </ul>
         </div>
       </div>
+      <select class="select w-20 max-w-xs" v-model="$i18n.locale">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+
+      </select>
     </div>
   </div>
 </template>
