@@ -7,7 +7,7 @@
                     <form>
                         <h2 class="card-title mb-3">{{ $t('Flights') }}</h2>
                         <div class="flex  flex-wrap  flex-row mt-3 gap-x-2.5 ">
-                            <div class="flex-auto ">
+                            <div class="grow ">
 
                                 <label class="label">
                                     <span class="label-text text-white">{{ $t('Origin') }}</span>
@@ -19,12 +19,12 @@
                                 </select>
 
                             </div>
-                            <div class="flex-auto ">
+                            <div class="shrink ">
                                 <label class="label">
                                     <span class="label-text text-white">{{ $t('Passengers') }}</span>
                                 </label>
-                                <input type="number" min="1" class="text-base-content input input-bordered w-full"
-                                    value="1" :placeholder="$t('Passengers')" />
+                                <vue-number-input class="text-base-content" size="large" :model-value="1" :min="1"
+                                    inline center controls></vue-number-input>
                             </div>
                             <div class="flex-auto ">
                                 <label class="label">
@@ -48,9 +48,10 @@
 
 <script setup lang="ts">
 import type Airport from '@/types/Airport'
+import VueNumberInput from '@chenfengyuan/vue-number-input';
 const { data: airports } = await useFetch('/api/airports');
 
 const getAirportInfo = (airport: Airport) => {
-    return `${airport.AEROPUERTO}, ${airport.PROVINCIA} ${airport.CIUDAD}`
+    return `${airport.PROVINCIA}, ${airport.CIUDAD} - ${airport.AEROPUERTO}`
 }
 </script>
