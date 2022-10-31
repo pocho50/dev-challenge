@@ -1,4 +1,5 @@
 <template>
+    <!-- Search Flight Form -->
     <div>
         <div class="p-4">
             <div class="card w-full bg-base-content text-primary-content">
@@ -11,10 +12,10 @@
                                 <label class="label">
                                     <span class="label-text text-white">{{ $t('Origin') }}</span>
                                 </label>
-                                <select class="select w-full max-w-xs text-base-content">
-                                    <option>Origne 1</option>
-                                    <option>Origen 2</option>
-                                    <option>Origen 3</option>
+                                <select class="select w-full text-base-content">
+                                    <option v-for="airport in airports" :key="airport.IATA">
+                                        {{ getAirportInfo(airport) }}
+                                    </option>
                                 </select>
 
                             </div>
@@ -44,3 +45,12 @@
         </div>
     </div>
 </template> 
+
+<script setup lang="ts">
+import type Airport from '@/types/Airport'
+const { data: airports } = await useFetch('/api/airports');
+
+const getAirportInfo = (airport: Airport) => {
+    return `${airport.AEROPUERTO}, ${airport.PROVINCIA} ${airport.CIUDAD}`
+}
+</script>

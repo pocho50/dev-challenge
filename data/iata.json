@@ -1,401 +1,401 @@
 [
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Bahía Blanca",
-      "NOMBRE AEROPUERTO": "Comandante Espora",
-      "OACI": "SAZB",
-      "IATA": "BHI"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Ciudad de Buenos Aires",
-      "NOMBRE AEROPUERTO": "Jorge Newbery",
-      "OACI": "SABE",
-      "IATA": "AEP"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Ezeiza",
-      "NOMBRE AEROPUERTO": "Ministro Pistarini",
-      "OACI": "SAEZ",
-      "IATA": "EZE"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Junín",
-      "NOMBRE AEROPUERTO": "Junín",
-      "OACI": "SAAJ",
-      "IATA": "JNI"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "La Plata",
-      "NOMBRE AEROPUERTO": "La Plata",
-      "OACI": "SADL",
-      "IATA": "LPG"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Mar del Plata",
-      "NOMBRE AEROPUERTO": "Astor Piazzolla",
-      "OACI": "SAZM",
-      "IATA": "MDQ"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Necochea",
-      "NOMBRE AEROPUERTO": "Necochea",
-      "OACI": "SAZO",
-      "IATA": "NEC"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "San Fernando",
-      "NOMBRE AEROPUERTO": "San Fernando",
-      "OACI": "SADF",
-      "IATA": "FDO"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Santa Teresita",
-      "NOMBRE AEROPUERTO": "Santa Teresita",
-      "OACI": "SAZL",
-      "IATA": "STT"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Tandil",
-      "NOMBRE AEROPUERTO": "Tandil",
-      "OACI": "SAZT",
-      "IATA": "TDL"
-    },
-    {
-      "PROVINCIA": "Buenos Aires",
-      "CIUDAD": "Villa Gesell",
-      "NOMBRE AEROPUERTO": "Villa Gesell",
-      "OACI": "SAVG",
-      "IATA": "VGL"
-    },
-    {
-      "PROVINCIA": "Catamarca",
-      "CIUDAD": "Catamarca",
-      "NOMBRE AEROPUERTO": "Cnel. Felipe Varela",
-      "OACI": "SANC",
-      "IATA": "CTC"
-    },
-    {
-      "PROVINCIA": "Chaco",
-      "CIUDAD": "Resistencia",
-      "NOMBRE AEROPUERTO": "Jose de San Martín",
-      "OACI": "SARE",
-      "IATA": "RES"
-    },
-    {
-      "PROVINCIA": "Chubut",
-      "CIUDAD": "Comodoro Rivadavia",
-      "NOMBRE AEROPUERTO": "Intern.Gral. E. Mosconi",
-      "OACI": "SAVC",
-      "IATA": "CRD"
-    },
-    {
-      "PROVINCIA": "Chubut",
-      "CIUDAD": "Esquel",
-      "NOMBRE AEROPUERTO": "Brig. Gral. Antonio Parodi",
-      "OACI": "SAVE",
-      "IATA": "EQS"
-    },
-    {
-      "PROVINCIA": "Chubut",
-      "CIUDAD": "Puerto Madryn",
-      "NOMBRE AEROPUERTO": "El Tehuelche",
-      "OACI": "SAVY",
-      "IATA": "PMY"
-    },
-    {
-      "PROVINCIA": "Chubut",
-      "CIUDAD": "Trelew",
-      "NOMBRE AEROPUERTO": "Alte. Marcos A. Zar",
-      "OACI": "SAVT",
-      "IATA": "REL"
-    },
-    {
-      "PROVINCIA": "Córdoba",
-      "CIUDAD": "Córdoba",
-      "NOMBRE AEROPUERTO": "A.Taravella/Pajas Blancas",
-      "OACI": "SACO",
-      "IATA": "COR"
-    },
-    {
-      "PROVINCIA": "Córdoba",
-      "CIUDAD": "Río Cuarto",
-      "NOMBRE AEROPUERTO": "Area Material Río Cuarto",
-      "OACI": "SAOC",
-      "IATA": "RCU"
-    },
-    {
-      "PROVINCIA": "Corrientes",
-      "CIUDAD": "Corrientes",
-      "NOMBRE AEROPUERTO": "Dr. Piragine Niveyro",
-      "OACI": "SARC",
-      "IATA": "CNQ"
-    },
-    {
-      "PROVINCIA": "Corrientes",
-      "CIUDAD": "Goya",
-      "NOMBRE AEROPUERTO": "Diego N. Díaz Colodrero",
-      "OACI": "SATG",
-      "IATA": "OYA"
-    },
-    {
-      "PROVINCIA": "Corrientes",
-      "CIUDAD": "Paso de los Libres",
-      "NOMBRE AEROPUERTO": "Paso de los Libres",
-      "OACI": "SARL",
-      "IATA": "AOL"
-    },
-    {
-      "PROVINCIA": "Entre Ríos",
-      "CIUDAD": "Concordia",
-      "NOMBRE AEROPUERTO": "Comodoro Pierrestegui",
-      "OACI": "SAAC",
-      "IATA": "COC"
-    },
-    {
-      "PROVINCIA": "Entre Ríos",
-      "CIUDAD": "Paraná",
-      "NOMBRE AEROPUERTO": "Gral. Justo J.de Urquiza",
-      "OACI": "SAAP",
-      "IATA": "PRA"
-    },
-    {
-      "PROVINCIA": "Formosa",
-      "CIUDAD": "Formosa",
-      "NOMBRE AEROPUERTO": "El Pucú",
-      "OACI": "SARF",
-      "IATA": "FMA"
-    },
-    {
-      "PROVINCIA": "Jujuy",
-      "CIUDAD": "San Salvador de Jujuy",
-      "NOMBRE AEROPUERTO": "Gob. Horacio Guzmán",
-      "OACI": "SASJ",
-      "IATA": "JUJ"
-    },
-    {
-      "PROVINCIA": "La Pampa",
-      "CIUDAD": "General Pico",
-      "NOMBRE AEROPUERTO": "General Pico",
-      "OACI": "SAZG",
-      "IATA": "GPO"
-    },
-    {
-      "PROVINCIA": "La Pampa",
-      "CIUDAD": "Santa Rosa",
-      "NOMBRE AEROPUERTO": "Santa Rosa",
-      "OACI": "SAZR",
-      "IATA": "RSA"
-    },
-    {
-      "PROVINCIA": "La Rioja",
-      "CIUDAD": "La Rioja",
-      "NOMBRE AEROPUERTO": "Cap. Vicente A. Almonacid",
-      "OACI": "SANL",
-      "IATA": "IRJ"
-    },
-    {
-      "PROVINCIA": "Mendoza",
-      "CIUDAD": "Malargue",
-      "NOMBRE AEROPUERTO": "Cdro. Ricardo Salomon",
-      "OACI": "SAMM",
-      "IATA": "LGS"
-    },
-    {
-      "PROVINCIA": "Mendoza",
-      "CIUDAD": "Mendoza",
-      "NOMBRE AEROPUERTO": "Gob. Gabrielli/El Plumerillo",
-      "OACI": "SAME",
-      "IATA": "MDZ"
-    },
-    {
-      "PROVINCIA": "Mendoza",
-      "CIUDAD": "San Rafael",
-      "NOMBRE AEROPUERTO": "Santiago Germano",
-      "OACI": "SAMR",
-      "IATA": "AFA"
-    },
-    {
-      "PROVINCIA": "Misiones",
-      "CIUDAD": "Posadas",
-      "NOMBRE AEROPUERTO": "Lib. Gral. J. de San Martín",
-      "OACI": "SARP",
-      "IATA": "PSS"
-    },
-    {
-      "PROVINCIA": "Misiones",
-      "CIUDAD": "Puerto Iguazú",
-      "NOMBRE AEROPUERTO": "My. Carlos E. Krause",
-      "OACI": "SARI",
-      "IATA": "IGR"
-    },
-    {
-      "PROVINCIA": "Neuquén",
-      "CIUDAD": "Cutral-Co",
-      "NOMBRE AEROPUERTO": "Cutral-Co",
-      "OACI": "SAZW",
-      "IATA": "CUT"
-    },
-    {
-      "PROVINCIA": "Neuquén",
-      "CIUDAD": "Neuquén",
-      "NOMBRE AEROPUERTO": "Presidente Perón",
-      "OACI": "SAZN",
-      "IATA": "NQN"
-    },
-    {
-      "PROVINCIA": "Neuquén",
-      "CIUDAD": "San Martín de los Andes",
-      "NOMBRE AEROPUERTO": "Aviador .Campos/Chapelco",
-      "OACI": "SAZY",
-      "IATA": "CPC"
-    },
-    {
-      "PROVINCIA": "Río Negro",
-      "CIUDAD": "Bariloche",
-      "NOMBRE AEROPUERTO": "Tte. Luis Candelaria",
-      "OACI": "SAZS",
-      "IATA": "BRC"
-    },
-    {
-      "PROVINCIA": "Río Negro",
-      "CIUDAD": "General Roca",
-      "NOMBRE AEROPUERTO": "Arturo Humberto Illia",
-      "OACI": "SAHR",
-      "IATA": "GNR"
-    },
-    {
-      "PROVINCIA": "Río Negro",
-      "CIUDAD": "Viedma",
-      "NOMBRE AEROPUERTO": "Gobernador Castello",
-      "OACI": "SAVV",
-      "IATA": "VDM"
-    },
-    {
-      "PROVINCIA": "Salta",
-      "CIUDAD": "Salta",
-      "NOMBRE AEROPUERTO": "Gral. Guemes",
-      "OACI": "SASA",
-      "IATA": "SLA"
-    },
-    {
-      "PROVINCIA": "Salta",
-      "CIUDAD": "Tartagal",
-      "NOMBRE AEROPUERTO": "Gral. E. Mosconi",
-      "OACI": "SAST",
-      "IATA": "TTG"
-    },
-    {
-      "PROVINCIA": "San Juan",
-      "CIUDAD": "San Juan",
-      "NOMBRE AEROPUERTO": "Domingo Faustino Sarmiento",
-      "OACI": "SANU",
-      "IATA": "UAQ"
-    },
-    {
-      "PROVINCIA": "San Luis",
-      "CIUDAD": "Merlo",
-      "NOMBRE AEROPUERTO": "Valle del Conlara",
-      "OACI": "SAOS",
-      "IATA": "RLO"
-    },
-    {
-      "PROVINCIA": "San Luis",
-      "CIUDAD": "San Luis",
-      "NOMBRE AEROPUERTO": "Brig. May. Cesar Raúl Ojeda",
-      "OACI": "SAOU",
-      "IATA": "LUQ"
-    },
-    {
-      "PROVINCIA": "San Luis",
-      "CIUDAD": "Villa Reynolds",
-      "NOMBRE AEROPUERTO": "Villa Reynolds",
-      "OACI": "SAOR",
-      "IATA": "VME"
-    },
-    {
-      "PROVINCIA": "Santa Cruz",
-      "CIUDAD": "El Calafate",
-      "NOMBRE AEROPUERTO": "Comandante Armando Tola",
-      "OACI": "SAWC",
-      "IATA": "FTE"
-    },
-    {
-      "PROVINCIA": "Santa Cruz",
-      "CIUDAD": "El Turbio",
-      "NOMBRE AEROPUERTO": "El Turbio/28 de Noviembre",
-      "OACI": "SAWT",
-      "IATA": "RYO"
-    },
-    {
-      "PROVINCIA": "Santa Cruz",
-      "CIUDAD": "Río Gallegos",
-      "NOMBRE AEROPUERTO": "Pil. Civ. Norberto Fernández",
-      "OACI": "SAWG",
-      "IATA": "RGL"
-    },
-    {
-      "PROVINCIA": "Santa Fe",
-      "CIUDAD": "Reconquista",
-      "NOMBRE AEROPUERTO": "Daniel Jukic",
-      "OACI": "SATR",
-      "IATA": "RCQ"
-    },
-    {
-      "PROVINCIA": "Santa Fe",
-      "CIUDAD": "Rosario",
-      "NOMBRE AEROPUERTO": "Islas Malvinas",
-      "OACI": "SAAR",
-      "IATA": "ROS"
-    },
-    {
-      "PROVINCIA": "Santa Fe",
-      "CIUDAD": "Santa Fe",
-      "NOMBRE AEROPUERTO": "Sauce Viejo",
-      "OACI": "SAAV",
-      "IATA": "SFN"
-    },
-    {
-      "PROVINCIA": "Santiago del Estero",
-      "CIUDAD": "Río Hondo",
-      "NOMBRE AEROPUERTO": "Termas de Río Hondo",
-      "OACI": "SANH",
-      "IATA": "RHD"
-    },
-    {
-      "PROVINCIA": "Santiago del Estero",
-      "CIUDAD": "Santiago del Estero",
-      "NOMBRE AEROPUERTO": "Com. De La Paz Aragonés",
-      "OACI": "SANE",
-      "IATA": "SDE"
-    },
-    {
-      "PROVINCIA": "Tierra del Fuego",
-      "CIUDAD": "Río Grande",
-      "NOMBRE AEROPUERTO": "Gob. Ramón Trejo Noel",
-      "OACI": "SAWE",
-      "IATA": "RGA"
-    },
-    {
-      "PROVINCIA": "Tierra del Fuego",
-      "CIUDAD": "Ushuaia",
-      "NOMBRE AEROPUERTO": "Malvinas Argentinas",
-      "OACI": "SAWH",
-      "IATA": "USH"
-    },
-    {
-      "PROVINCIA": "Tucumán",
-      "CIUDAD": "S. Miguel de Tucumán",
-      "NOMBRE AEROPUERTO": "Tte. Benjamín Matienzo",
-      "OACI": "SANT",
-      "IATA": "TUC"
-    }
-  ]
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Ciudad de Buenos Aires",
+    "AEROPUERTO": "Jorge Newbery",
+    "OACI": "SABE",
+    "IATA": "AEP"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Ezeiza",
+    "AEROPUERTO": "Ministro Pistarini",
+    "OACI": "SAEZ",
+    "IATA": "EZE"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Bahía Blanca",
+    "AEROPUERTO": "Comandante Espora",
+    "OACI": "SAZB",
+    "IATA": "BHI"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Junín",
+    "AEROPUERTO": "Junín",
+    "OACI": "SAAJ",
+    "IATA": "JNI"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "La Plata",
+    "AEROPUERTO": "La Plata",
+    "OACI": "SADL",
+    "IATA": "LPG"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Mar del Plata",
+    "AEROPUERTO": "Astor Piazzolla",
+    "OACI": "SAZM",
+    "IATA": "MDQ"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Necochea",
+    "AEROPUERTO": "Necochea",
+    "OACI": "SAZO",
+    "IATA": "NEC"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "San Fernando",
+    "AEROPUERTO": "San Fernando",
+    "OACI": "SADF",
+    "IATA": "FDO"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Santa Teresita",
+    "AEROPUERTO": "Santa Teresita",
+    "OACI": "SAZL",
+    "IATA": "STT"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Tandil",
+    "AEROPUERTO": "Tandil",
+    "OACI": "SAZT",
+    "IATA": "TDL"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "Villa Gesell",
+    "AEROPUERTO": "Villa Gesell",
+    "OACI": "SAVG",
+    "IATA": "VGL"
+  },
+  {
+    "PROVINCIA": "Catamarca",
+    "CIUDAD": "Catamarca",
+    "AEROPUERTO": "Cnel. Felipe Varela",
+    "OACI": "SANC",
+    "IATA": "CTC"
+  },
+  {
+    "PROVINCIA": "Chaco",
+    "CIUDAD": "Resistencia",
+    "AEROPUERTO": "Jose de San Martín",
+    "OACI": "SARE",
+    "IATA": "RES"
+  },
+  {
+    "PROVINCIA": "Chubut",
+    "CIUDAD": "Comodoro Rivadavia",
+    "AEROPUERTO": "Intern.Gral. E. Mosconi",
+    "OACI": "SAVC",
+    "IATA": "CRD"
+  },
+  {
+    "PROVINCIA": "Chubut",
+    "CIUDAD": "Esquel",
+    "AEROPUERTO": "Brig. Gral. Antonio Parodi",
+    "OACI": "SAVE",
+    "IATA": "EQS"
+  },
+  {
+    "PROVINCIA": "Chubut",
+    "CIUDAD": "Puerto Madryn",
+    "AEROPUERTO": "El Tehuelche",
+    "OACI": "SAVY",
+    "IATA": "PMY"
+  },
+  {
+    "PROVINCIA": "Chubut",
+    "CIUDAD": "Trelew",
+    "AEROPUERTO": "Alte. Marcos A. Zar",
+    "OACI": "SAVT",
+    "IATA": "REL"
+  },
+  {
+    "PROVINCIA": "Córdoba",
+    "CIUDAD": "Córdoba",
+    "AEROPUERTO": "A.Taravella/Pajas Blancas",
+    "OACI": "SACO",
+    "IATA": "COR"
+  },
+  {
+    "PROVINCIA": "Córdoba",
+    "CIUDAD": "Río Cuarto",
+    "AEROPUERTO": "Area Material Río Cuarto",
+    "OACI": "SAOC",
+    "IATA": "RCU"
+  },
+  {
+    "PROVINCIA": "Corrientes",
+    "CIUDAD": "Corrientes",
+    "AEROPUERTO": "Dr. Piragine Niveyro",
+    "OACI": "SARC",
+    "IATA": "CNQ"
+  },
+  {
+    "PROVINCIA": "Corrientes",
+    "CIUDAD": "Goya",
+    "AEROPUERTO": "Diego N. Díaz Colodrero",
+    "OACI": "SATG",
+    "IATA": "OYA"
+  },
+  {
+    "PROVINCIA": "Corrientes",
+    "CIUDAD": "Paso de los Libres",
+    "AEROPUERTO": "Paso de los Libres",
+    "OACI": "SARL",
+    "IATA": "AOL"
+  },
+  {
+    "PROVINCIA": "Entre Ríos",
+    "CIUDAD": "Concordia",
+    "AEROPUERTO": "Comodoro Pierrestegui",
+    "OACI": "SAAC",
+    "IATA": "COC"
+  },
+  {
+    "PROVINCIA": "Entre Ríos",
+    "CIUDAD": "Paraná",
+    "AEROPUERTO": "Gral. Justo J.de Urquiza",
+    "OACI": "SAAP",
+    "IATA": "PRA"
+  },
+  {
+    "PROVINCIA": "Formosa",
+    "CIUDAD": "Formosa",
+    "AEROPUERTO": "El Pucú",
+    "OACI": "SARF",
+    "IATA": "FMA"
+  },
+  {
+    "PROVINCIA": "Jujuy",
+    "CIUDAD": "San Salvador de Jujuy",
+    "AEROPUERTO": "Gob. Horacio Guzmán",
+    "OACI": "SASJ",
+    "IATA": "JUJ"
+  },
+  {
+    "PROVINCIA": "La Pampa",
+    "CIUDAD": "General Pico",
+    "AEROPUERTO": "General Pico",
+    "OACI": "SAZG",
+    "IATA": "GPO"
+  },
+  {
+    "PROVINCIA": "La Pampa",
+    "CIUDAD": "Santa Rosa",
+    "AEROPUERTO": "Santa Rosa",
+    "OACI": "SAZR",
+    "IATA": "RSA"
+  },
+  {
+    "PROVINCIA": "La Rioja",
+    "CIUDAD": "La Rioja",
+    "AEROPUERTO": "Cap. Vicente A. Almonacid",
+    "OACI": "SANL",
+    "IATA": "IRJ"
+  },
+  {
+    "PROVINCIA": "Mendoza",
+    "CIUDAD": "Malargue",
+    "AEROPUERTO": "Cdro. Ricardo Salomon",
+    "OACI": "SAMM",
+    "IATA": "LGS"
+  },
+  {
+    "PROVINCIA": "Mendoza",
+    "CIUDAD": "Mendoza",
+    "AEROPUERTO": "Gob. Gabrielli/El Plumerillo",
+    "OACI": "SAME",
+    "IATA": "MDZ"
+  },
+  {
+    "PROVINCIA": "Mendoza",
+    "CIUDAD": "San Rafael",
+    "AEROPUERTO": "Santiago Germano",
+    "OACI": "SAMR",
+    "IATA": "AFA"
+  },
+  {
+    "PROVINCIA": "Misiones",
+    "CIUDAD": "Posadas",
+    "AEROPUERTO": "Lib. Gral. J. de San Martín",
+    "OACI": "SARP",
+    "IATA": "PSS"
+  },
+  {
+    "PROVINCIA": "Misiones",
+    "CIUDAD": "Puerto Iguazú",
+    "AEROPUERTO": "My. Carlos E. Krause",
+    "OACI": "SARI",
+    "IATA": "IGR"
+  },
+  {
+    "PROVINCIA": "Neuquén",
+    "CIUDAD": "Cutral-Co",
+    "AEROPUERTO": "Cutral-Co",
+    "OACI": "SAZW",
+    "IATA": "CUT"
+  },
+  {
+    "PROVINCIA": "Neuquén",
+    "CIUDAD": "Neuquén",
+    "AEROPUERTO": "Presidente Perón",
+    "OACI": "SAZN",
+    "IATA": "NQN"
+  },
+  {
+    "PROVINCIA": "Neuquén",
+    "CIUDAD": "San Martín de los Andes",
+    "AEROPUERTO": "Aviador .Campos/Chapelco",
+    "OACI": "SAZY",
+    "IATA": "CPC"
+  },
+  {
+    "PROVINCIA": "Río Negro",
+    "CIUDAD": "Bariloche",
+    "AEROPUERTO": "Tte. Luis Candelaria",
+    "OACI": "SAZS",
+    "IATA": "BRC"
+  },
+  {
+    "PROVINCIA": "Río Negro",
+    "CIUDAD": "General Roca",
+    "AEROPUERTO": "Arturo Humberto Illia",
+    "OACI": "SAHR",
+    "IATA": "GNR"
+  },
+  {
+    "PROVINCIA": "Río Negro",
+    "CIUDAD": "Viedma",
+    "AEROPUERTO": "Gobernador Castello",
+    "OACI": "SAVV",
+    "IATA": "VDM"
+  },
+  {
+    "PROVINCIA": "Salta",
+    "CIUDAD": "Salta",
+    "AEROPUERTO": "Gral. Guemes",
+    "OACI": "SASA",
+    "IATA": "SLA"
+  },
+  {
+    "PROVINCIA": "Salta",
+    "CIUDAD": "Tartagal",
+    "AEROPUERTO": "Gral. E. Mosconi",
+    "OACI": "SAST",
+    "IATA": "TTG"
+  },
+  {
+    "PROVINCIA": "San Juan",
+    "CIUDAD": "San Juan",
+    "AEROPUERTO": "Domingo Faustino Sarmiento",
+    "OACI": "SANU",
+    "IATA": "UAQ"
+  },
+  {
+    "PROVINCIA": "San Luis",
+    "CIUDAD": "Merlo",
+    "AEROPUERTO": "Valle del Conlara",
+    "OACI": "SAOS",
+    "IATA": "RLO"
+  },
+  {
+    "PROVINCIA": "San Luis",
+    "CIUDAD": "San Luis",
+    "AEROPUERTO": "Brig. May. Cesar Raúl Ojeda",
+    "OACI": "SAOU",
+    "IATA": "LUQ"
+  },
+  {
+    "PROVINCIA": "San Luis",
+    "CIUDAD": "Villa Reynolds",
+    "AEROPUERTO": "Villa Reynolds",
+    "OACI": "SAOR",
+    "IATA": "VME"
+  },
+  {
+    "PROVINCIA": "Santa Cruz",
+    "CIUDAD": "El Calafate",
+    "AEROPUERTO": "Comandante Armando Tola",
+    "OACI": "SAWC",
+    "IATA": "FTE"
+  },
+  {
+    "PROVINCIA": "Santa Cruz",
+    "CIUDAD": "El Turbio",
+    "AEROPUERTO": "El Turbio/28 de Noviembre",
+    "OACI": "SAWT",
+    "IATA": "RYO"
+  },
+  {
+    "PROVINCIA": "Santa Cruz",
+    "CIUDAD": "Río Gallegos",
+    "AEROPUERTO": "Pil. Civ. Norberto Fernández",
+    "OACI": "SAWG",
+    "IATA": "RGL"
+  },
+  {
+    "PROVINCIA": "Santa Fe",
+    "CIUDAD": "Reconquista",
+    "AEROPUERTO": "Daniel Jukic",
+    "OACI": "SATR",
+    "IATA": "RCQ"
+  },
+  {
+    "PROVINCIA": "Santa Fe",
+    "CIUDAD": "Rosario",
+    "AEROPUERTO": "Islas Malvinas",
+    "OACI": "SAAR",
+    "IATA": "ROS"
+  },
+  {
+    "PROVINCIA": "Santa Fe",
+    "CIUDAD": "Santa Fe",
+    "AEROPUERTO": "Sauce Viejo",
+    "OACI": "SAAV",
+    "IATA": "SFN"
+  },
+  {
+    "PROVINCIA": "Santiago del Estero",
+    "CIUDAD": "Río Hondo",
+    "AEROPUERTO": "Termas de Río Hondo",
+    "OACI": "SANH",
+    "IATA": "RHD"
+  },
+  {
+    "PROVINCIA": "Santiago del Estero",
+    "CIUDAD": "Santiago del Estero",
+    "AEROPUERTO": "Com. De La Paz Aragonés",
+    "OACI": "SANE",
+    "IATA": "SDE"
+  },
+  {
+    "PROVINCIA": "Tierra del Fuego",
+    "CIUDAD": "Río Grande",
+    "AEROPUERTO": "Gob. Ramón Trejo Noel",
+    "OACI": "SAWE",
+    "IATA": "RGA"
+  },
+  {
+    "PROVINCIA": "Tierra del Fuego",
+    "CIUDAD": "Ushuaia",
+    "AEROPUERTO": "Malvinas Argentinas",
+    "OACI": "SAWH",
+    "IATA": "USH"
+  },
+  {
+    "PROVINCIA": "Tucumán",
+    "CIUDAD": "S. Miguel de Tucumán",
+    "AEROPUERTO": "Tte. Benjamín Matienzo",
+    "OACI": "SANT",
+    "IATA": "TUC"
+  }
+]
