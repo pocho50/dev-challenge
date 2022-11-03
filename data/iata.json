@@ -36,6 +36,13 @@
   },
   {
     "PROVINCIA": "Buenos Aires",
+    "CIUDAD": "El Palomar",
+    "AEROPUERTO": "La Plata",
+    "OACI": "SADP",
+    "IATA": "EPA"
+  },
+  {
+    "PROVINCIA": "Buenos Aires",
     "CIUDAD": "Mar del Plata",
     "AEROPUERTO": "Astor Piazzolla",
     "OACI": "SAZM",
