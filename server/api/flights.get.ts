@@ -4,8 +4,9 @@ import { createError, sendError } from "h3";
 import type Airport from "@/types/Airport";
 import type Flight from "@/types/Flight";
 import type Package from "@/types/Package";
+import type Search from "@/types/Search";
 
-export default defineEventHandler((event) => {
+export default defineEventHandler((event): Package[] => {
   const query = getQuery(event);
   if (!query.origin) {
     return error(event, "origin required");
@@ -14,7 +15,8 @@ export default defineEventHandler((event) => {
   const budget: number = query.budget || Infinity;
   const passengers: number = query.passengers || 1;
 
-  const availablePackages: Package[] = flights
+  const allFlights: Flight[] = addFlightId(flights);
+  const availablePackages: Package[] = allFlights
     // filtramos por origen
     .filter((outwardFlight: Flight) => outwardFlight.origin == origin)
     // por cada vuelo de ida obtenemos todos los vuelos de vuelta
@@ -22,7 +24,7 @@ export default defineEventHandler((event) => {
       const outwardFlightDate = new Date(outwardFlight.date);
 
       // obtenemos los posible vuelos de vuelta teniendo en cuenta el vuelo de ida
-      const returnsFlight: Flight[] = flights.filter(
+      const returnsFlight: Flight[] = allFlights.filter(
         (returnFlight: Flight) =>
           returnFlight.origin == outwardFlight.destination &&
           returnFlight.destination == origin &&
@@ -43,9 +45,18 @@ function error(event, msg) {
     event,
     createError({
       statusCode: 400,
-      date: msg,
+      data: msg,
     })
   );
+}
+
+function addFlightId(flights): Flight[] {
+  return flights.map((flight, index) => {
+    return {
+      ...flight,
+      id: index,
+    };
+  });
 }
 
 function diffDays(outwardFlightDate: Date, returnFlightDate: Date): number {
@@ -89,6 +100,7 @@ function getPackage(
       outwardFlight.availability,
       returnFlight.availability
     ),
+    id: `${outwardFlight.id}-${returnFlight.id}`,
   };
 }
 
