@@ -4,4 +4,5 @@ export default interface Flight {
   destination: string;
   price: number;
   availability: number;
+  id: string;
 }

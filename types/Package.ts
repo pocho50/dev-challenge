@@ -11,4 +11,5 @@ export default interface Package {
     iata: string;
   };
   availability: number;
+  id: string;
 }
