@@ -4,5 +4,11 @@
   "Passengers": "Pasajeros",
   "Budget": "Presupuesto",
   "optional": "opcional",
-  "Search": "Buscar"
+  "Search": "Buscar",
+  "Price": "Precio",
+  "Destination": "Destino",
+  "Total": "Total",
+  "days": "días",
+  "Outward flight": "Vuelo de ida",
+  "Return flight": "Vuelo de vuelta"
 }

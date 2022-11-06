@@ -13,16 +13,16 @@ const props = defineProps<{
             <div class="flex flex-col md:flex-row">
                 <Flight type="Outward flight" :flight="package.outwardFlight" class="flex-auto grow " />
                 <Flight type="Return flight" :flight="package.returnFlight" class="flex-auto grow " />
-                <div class="flex-auto ">{{ package.totalDays }} dias</div>
+                <div class="flex-auto ">{{ package.totalDays }} {{ $t('days') }}</div>
                 <div class="flex-auto ">
-                    Price: {{ $n(package.totalPrice, 'currency') }} <br>
+                    {{ $t('Price') }}: {{ $n(package.totalPrice, 'currency') }} <br>
                     {{ $t('Passengers') }}: {{ passengers }} <br>
-                    <strong>Total: {{ $n(passengers * package.totalPrice, 'currency') }}</strong>
+                    <strong>{{ $t('Total') }}: {{ $n(passengers * package.totalPrice, 'currency') }}</strong>
                 </div>
 
             </div>
             <div>
-                <span class="text-accent-focus font-semibold">Destino:</span>
+                <span class="text-accent-focus font-semibold">{{ $t('Destination') }}:</span>
                 {{ package.destination.province }},
                 {{ package.destination.city }}
 

@@ -4,5 +4,11 @@
   "Passengers": "Passengers",
   "Budget": "Budget",
   "optional": "optional",
-  "Search": "Search"
+  "Search": "Search",
+  "Price": "Price",
+  "Destination": "Destination",
+  "Total": "Total",
+  "days": "days",
+  "Outward flight": "Outward flight",
+  "Return flight": "Return flight"
 }

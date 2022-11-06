@@ -10,7 +10,7 @@ const props = defineProps<{
 
 <template>
     <div>
-        <span class="font-semibold">{{ type }}</span> |
+        <span class="font-semibold">{{ $t(type) }}</span> |
         <CalendarDaysIcon class="h-6 w-6 inline" /> {{ $d($getDate(flight.date), 'short') }} <br>
         {{ flight.origin }} - {{ flight.destination }}
 
