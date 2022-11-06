@@ -12,7 +12,7 @@ export default async function usePackages() {
   const fetchPackages = (newSearch: Search) => {
     search.value = { ...newSearch, budget: newSearch.budget || Infinity };
     const nuxtApp = useNuxtApp();
-    const getPackage = useGetPackage();
+    const buildPackage = useBuildPackage();
     // filtramos por origen
     const availablePackages = flights
       .filter(
@@ -33,7 +33,7 @@ export default async function usePackages() {
         );
         // retornamos todos los paquetes posibles para este vuelo de ida
         return returnsFlight.map((returnFlight: Flight): Package[] => {
-          return getPackage(
+          return buildPackage(
             outwardFlight,
             returnFlight,
             search.value.passengers,

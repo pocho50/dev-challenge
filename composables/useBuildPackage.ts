@@ -2,7 +2,7 @@ import type Airport from "@/types/Airport";
 import type Flight from "@/types/Flight";
 import type Package from "@/types/Package";
 
-export default function useGetPackage() {
+export default function useBuildPackage() {
   const nuxtApp = useNuxtApp();
   // Retornamos el paquete completo vuelo de ida y vuelta
   const getDestination = (
@@ -18,7 +18,7 @@ export default function useGetPackage() {
       iata: airport.IATA,
     };
   };
-  const getPackage = (
+  const buildPackage = (
     outwardFlight: Flight,
     returnFlight: Flight,
     passengers: number,
@@ -42,5 +42,5 @@ export default function useGetPackage() {
       id: `${outwardFlight.id}-${returnFlight.id}`,
     };
   };
-  return getPackage;
+  return buildPackage;
 }
