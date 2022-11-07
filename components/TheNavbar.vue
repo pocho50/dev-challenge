@@ -14,9 +14,9 @@ const toggleDark = useToggle(isDark)
   <div class="navbar bg-base-100 shadow-md">
     <div class="container mx-auto">
       <div class="flex-1">
-        <NuxtLink class="btn btn-ghost normal-case text-xl" to="/">{{
-            siteName
-        }}</NuxtLink>
+        <NuxtLink class="btn btn-ghost normal-case text-xl" to="/">
+          {{ siteName }}
+        </NuxtLink>
       </div>
       <!-- Right Side -->
       <div class="flex-none">
@@ -26,7 +26,9 @@ const toggleDark = useToggle(isDark)
 
         <div class="dropdown dropdown-end">
           <button class="btn btn-ghost btn-circle">
-            <ShoppingCartIcon class="h-6 w-6" />
+            <AppButton :icon="true">
+              <ShoppingCartIcon class="h-6 w-6" />
+            </AppButton>
 
           </button>
           <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">

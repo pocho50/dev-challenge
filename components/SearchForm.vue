@@ -14,7 +14,7 @@ const emit = defineEmits<{
 }>();
 
 const props = defineProps<{
-    loading?: Boolean,
+    loading?: boolean,
     airports: Airport[]
 }>()
 
@@ -26,10 +26,14 @@ const handleSubmit = () => {
     });
 }
 
-
 const getAirportInfo = (airport: Airport) => {
     return `${airport.PROVINCIA}, ${airport.CIUDAD} - ${airport.AEROPUERTO}`
 }
+
+onMounted(() => {
+    // preseleccionamos la primera opcion
+    origin.value = props.airports[0].IATA
+})
 </script>
 <template>
     <!-- Search Flight Form -->
@@ -68,7 +72,9 @@ const getAirportInfo = (airport: Airport) => {
                 </div>
 
                 <div class="card-actions justify-end mt-3">
-                    <button :class="{ loading }" type="submit" class="btn">{{ $t('Search') }}</button>
+                    <AppButton :loading="loading" type="submit" class="btn-accent">
+                        {{ $t('Search') }}
+                    </AppButton>
                 </div>
             </form>
         </div>

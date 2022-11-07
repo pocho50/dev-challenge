@@ -1,17 +1,19 @@
-<script setup>
-defineProps({
-  loading: {
-    type: Boolean,
-    default: false,
-  },
-  icon: {
-    type: Boolean,
-    default: false
-  }
+<script setup lang="ts">
+const props = defineProps({
+  loading: { type: Boolean, default: false },
+  icon: { type: Boolean, default: false }
 });
+
+const btnclass = computed(() => {
+  return {
+    'btn-ghost btn-circle': props.icon,
+    loading: props.loading
+  }
+
+})
 </script>
 <template>
-  <button class="btn" :class="icon ? 'btn-ghost btn-circle' : ''">
+  <button v-bind="$attrs" class="btn" :class="btnclass">
     <slot></slot>
   </button>
 </template>
