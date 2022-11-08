@@ -45,8 +45,8 @@ const availability = computed(() => {
                     {{ package.destination.city }}
                 </div>
                 <div class="flex-auto md:w-1/6">
-                    <AppButton class="btn-primary btn-sm block mt-3" :disabled="!availability"
-                        @click="handleAddToCart()">
+                    <AppButton class="btn-primary btn-sm block mt-3"
+                        :disabled="!availability || availability < props.passengers" @click="handleAddToCart()">
                         {{ $t('Add to cart') }}
                     </AppButton>
                     <hr class="my-3" />
