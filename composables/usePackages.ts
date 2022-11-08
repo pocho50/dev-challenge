@@ -8,6 +8,8 @@ export default async function usePackages() {
   const airports: Airport[] = await $fetch("/api/airports");
   const flights: Flight[] = await $fetch("/api/flights");
   const packages = ref<Package[] | []>([]);
+  const page = ref(1);
+  const itemsxPage = 10;
 
   const fetchPackages = (newSearch: Search) => {
     search.value = { ...newSearch, budget: newSearch.budget || Infinity };
@@ -54,13 +56,17 @@ export default async function usePackages() {
     });
   };
 
+  const remainingItems = computed(() => {
+    return packages.value.length > itemsxPage * page.value;
+  });
+
   const getPackages = computed<Package[]>(() => {
     return packages.value
       .sort((pack1: Package, pack2: Package) => {
         return pack1.totalPrice - pack2.totalPrice;
       })
-      .slice(0, 10);
+      .slice(0, itemsxPage * page.value);
   });
 
-  return { getPackages, fetchPackages, airports };
+  return { getPackages, fetchPackages, airports, page, remainingItems };
 }

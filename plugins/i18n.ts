@@ -18,7 +18,7 @@ const numberFormats = {
     currency: {
       style: "currency",
       currency: "ARS",
-      maximumFractionDigits: 1,
+      maximumFractionDigits: 2,
     },
     decimal: {
       style: "decimal",

@@ -66,7 +66,7 @@ onMounted(() => {
                             <span class="label-text text-base-100">{{ $t('Budget') }} ({{ $t('optional')
                             }})</span>
                         </label>
-                        <input type="number" v-model="budget" :placeholder="$t('Budget')"
+                        <input type="number" min="0" v-model="budget" :placeholder="$t('Budget')"
                             class="text-base-content input input-bordered w-full" />
                     </div>
                 </div>
