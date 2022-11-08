@@ -20,6 +20,7 @@
     "@heroicons/vue": "^2.0.12",
     "@pinia/nuxt": "^0.4.3",
     "daisyui": "^2.36.1",
-    "pinia": "^2.0.23"
+    "pinia": "^2.0.23",
+    "pinia-plugin-persistedstate": "^2.3.0"
   }
 }
