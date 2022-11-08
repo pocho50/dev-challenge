@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useCartStore } from '@/stores/CartStore'
-import { ShoppingCartIcon, XCircleIcon } from '@heroicons/vue/24/outline'
+import { ShoppingCartIcon, XCircleIcon } from '@heroicons/vue/24/outline/index'
 import type Package from '@/types/Package';
 
 const cartStore = useCartStore()

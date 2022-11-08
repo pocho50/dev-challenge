@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type Flight from '@/types/Flight';
-import { CalendarDaysIcon } from '@heroicons/vue/24/outline';
+import { CalendarDaysIcon } from '@heroicons/vue/24/outline/index';
 const props = defineProps<{
     flight: Flight,
     type: string
