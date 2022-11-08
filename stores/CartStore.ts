@@ -11,15 +11,14 @@ export const useCartStore = defineStore(
       packages.value.reduce((acc, pack: Package) => acc + pack.passengers, 0)
     );
     const isEmpty = computed(() => count.value === 0);
-    const total = computed((state) => {
+    const total = computed((): number => {
       return packages.value.reduce((p, pack) => pack.totalPrice + p, 0);
     });
 
     // actions
-    function removeProducts(productIds) {
-      productIds = Array.isArray(productIds) ? productIds : [productIds];
-      products.value = products.value.filter(
-        (p) => !productIds.includes(p.sys.id)
+    function removePackage(pack: Package) {
+      packages.value = packages.value.filter(
+        (item: Package) => item.id != pack.id
       );
     }
 
@@ -41,7 +40,7 @@ export const useCartStore = defineStore(
       count,
       isEmpty,
       total,
-      removeProducts,
+      removePackage,
       addPackage,
     };
   },
