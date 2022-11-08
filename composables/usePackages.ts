@@ -54,7 +54,7 @@ export default async function usePackages() {
     });
   };
 
-  const getPackages = computed(() => {
+  const getPackages = computed<Package[]>(() => {
     return packages.value
       .sort((pack1: Package, pack2: Package) => {
         return pack1.totalPrice - pack2.totalPrice;

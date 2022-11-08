@@ -2,6 +2,7 @@
     <div>
         <SearchForm @@search="handleSearch" :airports="airports" :loading="loading" />
         <Package v-for="pack in getPackages" :package="pack" :key="pack.id" :passengers="passengers" />
+        <Alert v-show="msg" :msg="msg" :type="'alert-info'" />
     </div>
 </template> 
 
@@ -11,6 +12,7 @@ import type Search from '@/types/Search'
 const passengers = ref(1)
 const loading = ref(false)
 const { getPackages, fetchPackages, airports } = await usePackages();
+const msg = ref('')
 
 const handleSearch = async (newSearch: Search) => {
 
@@ -20,7 +22,11 @@ const handleSearch = async (newSearch: Search) => {
     setTimeout(() => {
         fetchPackages(newSearch)
         loading.value = false
+        msg.value = getPackages.value.length === 0
+            ? 'No results'
+            : ''
     }, 20);
+
 
 }
 
