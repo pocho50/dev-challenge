@@ -1,8 +1,11 @@
 <script setup>
 import { useDark, useToggle } from '@vueuse/core'
 import { SunIcon, MoonIcon, ShoppingCartIcon } from '@heroicons/vue/24/outline'
+import { useCartStore } from '@/stores/CartStore';
 
 const { siteName } = useAppConfig();
+
+const cartStore = useCartStore()
 
 const isDark = useDark({
   attribute: 'data-theme',
@@ -25,15 +28,27 @@ const toggleDark = useToggle(isDark)
         </AppButton>
 
         <div class="dropdown dropdown-end">
-          <button class="btn btn-ghost btn-circle">
-            <AppButton :icon="true">
-              <ShoppingCartIcon class="h-6 w-6" />
-            </AppButton>
+          <AppButton :icon="true">
+            <ShoppingCartIcon class="h-6 w-6" />
+            <span v-show="!cartStore.isEmpty" class="badge badge-sm badge-info absolute right-px top-px">{{
+                cartStore.count
+            }}</span>
+          </AppButton>
+          <ul v-if="!cartStore.isEmpty" tabindex="0"
+            class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-96">
+            <li v-for="pack in cartStore.packages" :key="pack.id" class="flex flex-row justify-between">
+              <div class="flex-auto">{{ pack.passengers }} x</div>
+              <div class="flex-auto">{{ pack.destination.province }}, {{ pack.destination.city }} <br> {{
+                  $d($getDate(pack.outwardFlight.date), 'short')
+              }}</div>
+              <div class="flex-auto">{{ $n(pack.totalPrice, 'currency') }}</div>
 
-          </button>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Item 1</a></li>
-            <li><a>Item 2</a></li>
+            </li>
+            <li class="flex flex-row justify-end border-t-2 border-base-300 ">
+              <div>
+                <strong>{{ $t('Total') }}: {{ $n(cartStore.total, 'currency') }}</strong>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

@@ -13,7 +13,7 @@ const btnclass = computed(() => {
 })
 </script>
 <template>
-  <button v-bind="$attrs" class="btn" :class="btnclass">
+  <button class="btn" :class="btnclass">
     <slot></slot>
   </button>
 </template>

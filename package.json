@@ -18,6 +18,8 @@
   "dependencies": {
     "@chenfengyuan/vue-number-input": "^2.0.1",
     "@heroicons/vue": "^2.0.12",
-    "daisyui": "^2.36.1"
+    "@pinia/nuxt": "^0.4.3",
+    "daisyui": "^2.36.1",
+    "pinia": "^2.0.23"
   }
 }
