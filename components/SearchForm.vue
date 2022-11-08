@@ -40,12 +40,12 @@ onMounted(() => {
     <div class="card w-full bg-base-content text-primary-content shadow-xl">
         <div class="card-body">
             <form @submit.prevent="handleSubmit">
-                <h2 class="card-title mb-3">{{ $t('Flights') }}</h2>
+                <h2 class="card-title mb-3 text-base-100">{{ $t('Flights') }}</h2>
                 <div class="flex  flex-wrap  flex-row mt-3 gap-x-2.5 ">
                     <div class="grow ">
 
                         <label class="label">
-                            <span class="label-text text-white">{{ $t('Origin') }}</span>
+                            <span class="label-text text-base-100">{{ $t('Origin') }}</span>
                         </label>
                         <select v-model="origin" class="select w-full text-base-content">
                             <option :value="airport.IATA" v-for="airport in airports" :key="airport.IATA">
@@ -56,14 +56,14 @@ onMounted(() => {
                     </div>
                     <div class="shrink ">
                         <label class="label">
-                            <span class="label-text text-white">{{ $t('Passengers') }}</span>
+                            <span class="label-text text-base-100">{{ $t('Passengers') }}</span>
                         </label>
-                        <vue-number-input v-model="passengers" class="text-base-content" size="large" :min="1" inline
-                            center controls></vue-number-input>
+                        <vue-number-input v-model="passengers" class="text-black" size="large" :min="1" inline center
+                            controls></vue-number-input>
                     </div>
                     <div class="flex-auto ">
                         <label class="label">
-                            <span class="label-text text-white">{{ $t('Budget') }} ({{ $t('optional')
+                            <span class="label-text text-base-100">{{ $t('Budget') }} ({{ $t('optional')
                             }})</span>
                         </label>
                         <input type="number" v-model="budget" :placeholder="$t('Budget')"

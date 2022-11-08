@@ -26,7 +26,7 @@ const availability = computed(() => {
 </script>
 
 <template>
-    <div class="border border-base-300 card my-5 bg-base-100 ">
+    <div class="border border-base-300 card my-5 bg-base-300 ">
         <div class="card-body">
             <div class="flex flex-col md:flex-row">
                 <Flight type="Outward flight" :flight="package.outwardFlight" class="flex-auto md:w-2/6" />

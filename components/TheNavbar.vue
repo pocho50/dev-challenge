@@ -9,6 +9,8 @@ const cartStore = useCartStore()
 
 const isDark = useDark({
   attribute: 'data-theme',
+  valueDark: 'business',
+  valueLight: 'autumn'
 });
 const toggleDark = useToggle(isDark)
 </script>
