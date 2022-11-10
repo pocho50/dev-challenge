@@ -8,6 +8,7 @@ export default async function usePackages() {
   const airports: Airport[] = await $fetch("/api/airports");
   const flights: Flight[] = await $fetch("/api/flights");
   const packages = ref<Package[] | []>([]);
+  const destination = ref("");
   const page = ref(1);
   const itemsxPage = 10;
 
@@ -57,16 +58,33 @@ export default async function usePackages() {
   };
 
   const remainingItems = computed(() => {
-    return packages.value.length > itemsxPage * page.value;
+    return filterByDestination.value.length > itemsxPage * page.value;
+  });
+
+  const filterByDestination = computed(() => {
+    return packages.value.filter(
+      (pack) =>
+        pack.destination.iata === destination.value || !destination.value
+    );
   });
 
   const getPackages = computed<Package[]>(() => {
-    return packages.value
+    return filterByDestination.value
       .sort((pack1: Package, pack2: Package) => {
         return pack1.totalPrice - pack2.totalPrice;
       })
       .slice(0, itemsxPage * page.value);
   });
 
-  return { getPackages, fetchPackages, airports, page, remainingItems };
+  const totalCount = computed(() => packages.value.length);
+
+  return {
+    getPackages,
+    fetchPackages,
+    airports,
+    page,
+    remainingItems,
+    destination,
+    totalCount,
+  };
 }
