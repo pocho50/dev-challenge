@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import Airport from '@/types/Airport';
+import useAirports from '@/composables/useAirports';
 
 defineProps<{
-    modelValue: string,
-    airports: Airport[]
+    modelValue: string
 }>()
 
 defineEmits(['update:modelValue'])
+
+const { airports, getAirportInfo } = await useAirports()
 
 </script>
 
@@ -20,7 +21,7 @@ defineEmits(['update:modelValue'])
                 class="inline select select-bordered w-full text-base-content">
                 <option value="">{{ $t('All') }}</option>
                 <option :value="airport.IATA" v-for="airport in airports" :key="airport.IATA">
-                    {{ airport.PROVINCIA }}, {{ airport.CIUDAD }}
+                    {{ getAirportInfo(airport) }}
                 </option>
             </select>
         </div>

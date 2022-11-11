@@ -1,14 +1,12 @@
 import type Airport from "@/types/Airport";
 import type Flight from "@/types/Flight";
 import type Package from "@/types/Package";
+import useAirports from "@/composables/useAirports";
 
-export default function useBuildPackage() {
-  const nuxtApp = useNuxtApp();
-  const getDestination = (
-    flight: Flight,
-    airports: Airport[]
-  ): Package.destination => {
-    const airport: Airport = airports.find(
+export default async function useBuildPackage() {
+  const { airports } = await useAirports();
+  const getDestination = (flight: Flight): Package.destination => {
+    const airport: Airport = airports.value.find(
       (airport: Airport) => airport.IATA == flight.destination
     );
     return {
@@ -21,9 +19,9 @@ export default function useBuildPackage() {
   const buildPackage = (
     outwardFlight: Flight,
     returnFlight: Flight,
-    passengers: number,
-    airports: Airport[]
+    passengers: number
   ): Package => {
+    const nuxtApp = useNuxtApp();
     const outwardFlightDate = nuxtApp.$getDate(outwardFlight.date);
     const returnFlightDate = nuxtApp.$getDate(returnFlight.date);
     return {
@@ -34,7 +32,7 @@ export default function useBuildPackage() {
       ),
       totalDays: nuxtApp.$diffDays(outwardFlightDate, returnFlightDate),
       passengers,
-      destination: getDestination(outwardFlight, airports),
+      destination: getDestination(outwardFlight),
       availability: Math.min(
         outwardFlight.availability,
         returnFlight.availability

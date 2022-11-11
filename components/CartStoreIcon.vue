@@ -19,7 +19,7 @@ const removeToCart = (pack: Package) => {
                     cartStore.count
             }}</span>
         </AppButton>
-        <ul v-if="!cartStore.isEmpty" tabindex="0" class="dropdown-content p-4 shadow bg-base-100 rounded-box w-96">
+        <ul v-if="!cartStore.isEmpty" tabindex="0" class="dropdown-content p-4 shadow bg-base-100 rounded-box w-auto">
             <li v-for="pack in cartStore.packages" :key="pack.id" class="flex flex-row items-center py-2 flex-nowrap">
                 <div class="flex-none p-1 w-8">{{ pack.passengers }} x</div>
                 <div class="flex-none  p-1 w-44">{{ pack.destination.province }}, {{ pack.destination.city }} <br> {{

@@ -1,7 +1,7 @@
 <template>
     <div>
-        <SearchForm @@search="handleSearch" :airports="airports" :loading="loading" />
-        <FilterByDestination v-if="totalCount > 0" :airports="airports" v-model="destination" />
+        <SearchForm @@search="handleSearch" :loading="loading" />
+        <FilterByDestination v-if="totalCount > 0" v-model="destination" />
         <Package v-for="pack in getPackages" :package="pack" :key="pack.id" :passengers="passengers" />
         <Alert v-show="showMsg" :msg="showMsg" :type="'alert-info'" />
 
@@ -19,7 +19,6 @@ const loading = ref(false)
 
 const { getPackages,
     fetchPackages,
-    airports,
     page,
     remainingItems,
     destination,

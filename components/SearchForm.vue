@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import type Airport from '@/types/Airport'
 import type Search from '@/types/Search'
 import VueNumberInput from '@chenfengyuan/vue-number-input'
+import useAirports from '@/composables/useAirports';
 
 const passengers = ref(1)
 const origin = ref('')
@@ -14,8 +15,7 @@ const emit = defineEmits<{
 }>();
 
 const props = defineProps<{
-    loading?: boolean,
-    airports: Airport[]
+    loading?: boolean
 }>()
 
 const handleSubmit = () => {
@@ -26,13 +26,11 @@ const handleSubmit = () => {
     });
 }
 
-const getAirportInfo = (airport: Airport) => {
-    return `${airport.PROVINCIA}, ${airport.CIUDAD} - ${airport.AEROPUERTO}`
-}
+const { airports, getAirportInfo } = await useAirports()
 
 onMounted(() => {
     // preseleccionamos la primera opcion
-    origin.value = props.airports[0].IATA
+    origin.value = airports.value[0].IATA
 })
 </script>
 <template>

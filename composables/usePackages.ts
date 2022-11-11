@@ -5,17 +5,16 @@ import type Search from "@/types/Search";
 
 export default async function usePackages() {
   const search = ref<Search>({ passengers: 1, budget: Infinity, origin: "" });
-  const airports: Airport[] = await $fetch("/api/airports");
   const flights: Flight[] = await $fetch("/api/flights");
   const packages = ref<Package[] | []>([]);
   const destination = ref("");
   const page = ref(1);
   const itemsxPage = 10;
 
-  const fetchPackages = (newSearch: Search) => {
+  const fetchPackages = async (newSearch: Search) => {
     search.value = { ...newSearch, budget: newSearch.budget || Infinity };
     const nuxtApp = useNuxtApp();
-    const buildPackage = useBuildPackage();
+    const buildPackage = await useBuildPackage();
     // filtramos por origen
     const availablePackages = flights
       .filter(
@@ -39,8 +38,7 @@ export default async function usePackages() {
           return buildPackage(
             outwardFlight,
             returnFlight,
-            search.value.passengers,
-            airports
+            search.value.passengers
           );
         });
       });
@@ -81,7 +79,6 @@ export default async function usePackages() {
   return {
     getPackages,
     fetchPackages,
-    airports,
     page,
     remainingItems,
     destination,
