@@ -30,6 +30,7 @@ const handleSearch = async (newSearch: Search) => {
 
     passengers.value = newSearch.passengers
     loading.value = true
+    destination.value = ''
 
     setTimeout(() => {
         fetchPackages(newSearch)
