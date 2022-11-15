@@ -16,4 +16,7 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  runtimeConfig: {
+    stripeSecret: process.env.STRIPE_SECRET,
+  },
 });
