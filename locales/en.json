@@ -3,6 +3,7 @@
   "Origin": "Origin",
   "Passengers": "Passengers",
   "Budget": "Budget",
+  "Date": "Date",
   "optional": "optional",
   "Search": "Search",
   "Price": "Price",
@@ -16,5 +17,8 @@
   "No results": "There are no results",
   "Load more": "Load +",
   "All": "All",
-  "Filter by destination": "Filter by destination"
+  "Filter by destination": "Filter by destination",
+  "Checkout": "Check out",
+  "Your Cart": "Your Cart",
+  "View cart": "View cart"
 }

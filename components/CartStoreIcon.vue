@@ -7,7 +7,6 @@ const cartStore = useCartStore()
 
 const removeToCart = (pack: Package) => {
     cartStore.removePackage(pack)
-    return false
 }
 
 </script>
@@ -35,8 +34,14 @@ const removeToCart = (pack: Package) => {
                 </div>
 
             </li>
-            <li class="flex flex-row justify-end border-t-2 border-base-300 py-2">
+            <li class="flex flex-row justify-between border-t-2 border-base-300 py-2">
                 <div>
+                    <NuxtLink to="/cart" class="btn btn-primary btn-sm">
+                        {{ $t('View cart') }}
+                    </NuxtLink>
+                </div>
+                <div>
+
                     <strong>{{ $t('Total') }}: {{ $n(cartStore.total, 'currency') }}</strong>
                 </div>
             </li>
