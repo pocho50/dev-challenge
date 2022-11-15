@@ -43,6 +43,10 @@ Podés (¡y te invitamos a que lo hagas!) hacer las preguntas que sean necesaria
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
+## Demo app
+
+[https://helpful-rolypoly-f09290.netlify.app/](https://helpful-rolypoly-f09290.netlify.app/)
+
 ## Setup
 
 Make sure to install the dependencies:
